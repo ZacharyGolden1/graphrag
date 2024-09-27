@@ -77,6 +77,7 @@ def main(query):
             print(f"\n{iter}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START DOCUMENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             print(document.page_content)
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END DOCUMENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+            break
     print(f"returned {len(retrieved_docs)} docs")
     # Cleanup vectorstore
     vectorstore.delete_collection()
